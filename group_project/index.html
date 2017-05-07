@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <title>We Don't Have a Plan</title>
+    <script type="text/javascript">
+
+function issue(){
+  var response = document.getElementById("example");
+  var issue = document.getElementById('issue')
+
+  response.innerHTML = "example" + issue.value;
+}
+
+
+
+    </script>
+  </head>
+  <body>
+<header>
+  <h1>We Don't Have a Plan.</h1>
+  <p class="author">By Rohan Sanjay</p>
+</header>
+<br>
+<form class="ondeck" action="index.html" method="post">
+  <label for="location"><h3> Location: </h3> </label>
+  <br>
+  <input type="radio" name="San Jose" value="sanjose"> San Jose<br>
+  <input type="radio" name="Fremont" value="fremont"> Fremont<br>
+  <input type="radio" name="Cupertino" value="cupertino"> Cupertino <br>
+  <br>
+  <label for="crew"> <h3> Crew: </h3> </label>
+  <br>
+  <input type="radio" name="rohan" value="rohan"> Rohan       <br>
+  <input type="radio" name="chris" value="chris"> Chris       <br>
+  <input type="radio" name="kombeze" value="kombeze"> Kombeze <br>
+  <input type="radio" name="shreyas" value="shreyas"> Shreyas <br>
+  <input type="radio" name="pavan" value="pavan"> Pavan       <br>
+  <input type="radio" name="prateek" value="prateek"> Prateek <br>
+  <input type="radio" name="allen" value="allen"> Allen       <br>
+ </form>
+ <br>
+  <select class="activity" name="activity">
+      <option value="Chill">Chill</option>
+      <option value="Eat">Eat</option>
+      <option value="Trip">Trip</option>
+      <option value="nightout">Night Out</option>
+  </select>
+  <br>
+  <br>
+  <p> Are there any issues? </p><input type="text" id="issue"><br>
+  <p id="example"> </p>
+  <div class="button">
+    <input type="button" name="" value="Generate Plan" onclick="issue();">
+  </div>
+
+  <div class="plan">
+    <h3> The Plan is: </h3>
+  </div>
+
+
+  </body>
+</html>
